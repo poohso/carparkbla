@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Park BLA</title>
+
+<style>
+body{
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:#f4f6f8;
+  color:#1f2937;
+}
+header{
+  background:linear-gradient(135deg,#e6f0ff,#ffffff);
+  padding:50px 20px;
+}
+.container{
+  max-width:1100px;
+  margin:auto;
+}
+.hero h1{
+  font-size:38px;
+}
+.btn{
+  display:inline-block;
+  background:#2563eb;
+  color:#fff;
+  padding:12px 26px;
+  border-radius:999px;
+  text-decoration:none;
+  margin-top:16px;
+}
+section{
+  padding:50px 20px;
+}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+.card{
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+.card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+}
+.card-body{
+  padding:16px;
+}
+footer{
+  background:#fff;
+  padding:40px 20px;
+  border-top:1px solid #e5e7eb;
+}
+iframe{
+  width:100%;
+  height:260px;
+  border:0;
+  border-radius:12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container hero">
+    <h1>Car Park BLA</h1>
+    <p>บริการลานจอดรถ รายวัน และรายเดือน</p>
+    <a href="#parks" class="btn">ดูบริการลานจอด</a>
+  </div>
+</header>
+
+<section id="parks">
+  <div class="container">
+    <h2>บริการลานจอดรถ</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a">
+        <div class="card-body">
+          <h3>Cosmo Bazaar</h3>
+          <p>เวลาเปิด: 06:00 – 24:00</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1486326658981-ed68abe5868e">
+        <div class="card-body">
+          <h3>ตลาดสดรวมใจ</h3>
+          <p>เวลาเปิด: 05:00 – 22:00</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+        <div class="card-body">
+          <h3>Outlet</h3>
+          <p>เวลาเปิด: 10:00 – 21:00</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <h3>Bangkok Land Agency</h3>
+    <p>โทร: 02-000-0000</p>
+    <p>47/555 หมู่ 4 แจ้งวัฒนะ ปากเกร็ด นนทบุรี</p>
+
+    <iframe 
+      src="https://www.google.com/maps?q=Bangkok%20Land&output=embed">
+    </iframe>
+  </div>
+</footer>
+
+</body>
+</html>
