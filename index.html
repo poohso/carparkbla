@@ -6,38 +6,51 @@
 <title>Car Park BLA</title>
 
 <style>
+*{
+  box-sizing:border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
 body{
   margin:0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background:#f4f6f8;
-  color:#1f2937;
+  background:#f5f7fb;
+  color:#333;
 }
 header{
-  background:linear-gradient(135deg,#e6f0ff,#ffffff);
-  padding:50px 20px;
+  background:linear-gradient(135deg,#4f46e5,#6366f1);
+  color:#fff;
+  padding:60px 20px;
 }
 .container{
   max-width:1100px;
   margin:auto;
 }
+.hero{
+  text-align:center;
+}
 .hero h1{
-  font-size:38px;
+  font-size:36px;
+  margin-bottom:10px;
+}
+.hero p{
+  font-size:18px;
+  opacity:.9;
 }
 .btn{
   display:inline-block;
-  background:#2563eb;
-  color:#fff;
-  padding:12px 26px;
-  border-radius:999px;
-  text-decoration:none;
   margin-top:16px;
+  padding:12px 22px;
+  background:#fff;
+  color:#4f46e5;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
 }
 section{
   padding:50px 20px;
 }
 .cards{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   gap:20px;
 }
 .card{
@@ -54,10 +67,14 @@ section{
 .card-body{
   padding:16px;
 }
+.card-body h3{
+  margin:0 0 8px;
+}
 footer{
   background:#fff;
   padding:40px 20px;
   border-top:1px solid #e5e7eb;
+  text-align:center;
 }
 iframe{
   width:100%;
@@ -84,28 +101,33 @@ iframe{
 
     <div class="cards">
 
+      <!-- ลานที่ 1 -->
       <div class="card">
         <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a">
         <div class="card-body">
           <h3>Cosmo Bazaar</h3>
-          <p>เวลาเปิด: 06:00 – 24:00</p>
-          <a class="btn" href="Cosmo.html">ดูรายละเอียด</a>
+          <p>เวลาเปิด: 06:00 - 24:00</p>
+          <a class="btn" href="cosmo.html">ดูรายละเอียด</a>
         </div>
       </div>
 
+      <!-- ลานที่ 2 -->
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1486326658981-ed68abe5868e">
+        <img src="https://images.unsplash.com/photo-1486326658981-f0840eeed16a">
         <div class="card-body">
-          <h3>ตลาดสดรวมใจ</h3>
-          <p>เวลาเปิด: 05:00 – 22:00</p>
+          <h3>ลานรวมใจ</h3>
+          <p>เวลาเปิด: 24 ชั่วโมง</p>
+          <a class="btn" href="ruamjai.html">ดูรายละเอียด</a>
         </div>
       </div>
 
+      <!-- ลานที่ 3 -->
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+        <img src="https://images.unsplash.com/photo-1493238792000-8113da705763">
         <div class="card-body">
-          <h3>Outlet</h3>
-          <p>เวลาเปิด: 10:00 – 21:00</p>
+          <h3>ลานหน้าอาคาร BLA</h3>
+          <p>สำหรับพนักงาน และสมาชิก</p>
+          <a class="btn" href="bla.html">ดูรายละเอียด</a>
         </div>
       </div>
 
@@ -115,13 +137,11 @@ iframe{
 
 <footer>
   <div class="container">
-    <h3>Bangkok Land Agency</h3>
-    <p>โทร: 02-000-0000</p>
-    <p>47/555 หมู่ 4 แจ้งวัฒนะ ปากเกร็ด นนทบุรี</p>
-
+    <h3>แผนที่</h3>
     <iframe 
-      src="https://www.google.com/maps?q=Bangkok%20Land&output=embed">
+      src="https://www.google.com/maps?q=Bangkok&output=embed">
     </iframe>
+    <p style="margin-top:20px;">© 2026 Car Park BLA</p>
   </div>
 </footer>
 
