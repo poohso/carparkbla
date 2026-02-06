@@ -2,74 +2,101 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Car Park BLA</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
     body{
       margin:0;
-      font-family: Arial, sans-serif;
-      background:#f7f8fa;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:#f4f6f8;
+      color:#1f2937;
     }
+
     header{
-      background:linear-gradient(135deg,#2563eb,#1e40af);
-      color:#fff;
+      background:linear-gradient(135deg,#2563eb,#dbeafe);
       padding:60px 20px;
       text-align:center;
     }
-    .btn{
-      display:inline-block;
-      margin-top:20px;
-      padding:12px 24px;
-      background:#fff;
-      color:#1e40af;
-      text-decoration:none;
-      border-radius:8px;
-      font-weight:bold;
+
+    header h1{
+      margin:0;
+      font-size:36px;
     }
+
+    header p{
+      margin-top:10px;
+      font-size:18px;
+      opacity:.9;
+    }
+
     .container{
       max-width:1100px;
       margin:auto;
       padding:40px 20px;
     }
+
     .cards{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-      gap:20px;
+      gap:24px;
     }
+
     .card{
       background:#fff;
-      border-radius:16px;
+      border-radius:20px;
       overflow:hidden;
       box-shadow:0 10px 24px rgba(0,0,0,.08);
-      transition:.2s;
+      transition:.3s;
+      display:flex;
+      flex-direction:column;
     }
+
     .card:hover{
-      transform:translateY(-4px);
+      transform:translateY(-6px);
     }
+
     .card img{
       width:100%;
-      height:170px;
+      height:180px;
       object-fit:cover;
     }
+
     .card-body{
-      padding:16px;
+      padding:20px;
+      flex:1;
     }
-    .card-body h3{
-      margin:0 0 8px;
+
+    .card-body h2{
+      margin:0 0 10px;
     }
-    .card-body a{
-      display:inline-block;
-      margin-top:12px;
-      color:#2563eb;
-      font-weight:bold;
-      text-decoration:none;
+
+    .card-body p{
+      margin:0 0 16px;
+      color:#4b5563;
     }
-    footer{
-      background:#fff;
-      padding:30px;
+
+    .btn{
+      display:block;
       text-align:center;
+      background:#2563eb;
+      color:#fff;
+      padding:14px;
+      text-decoration:none;
+      font-weight:600;
+      border-radius:999px;
+    }
+
+    .cosmo{ background:#2563eb; }
+    .market{ background:#16a34a; }
+    .outlet{ background:#f97316; }
+
+    footer{
+      text-align:center;
+      padding:30px 20px;
+      background:#fff;
       border-top:1px solid #e5e7eb;
+      margin-top:40px;
     }
   </style>
 </head>
@@ -79,38 +106,47 @@
 <header>
   <h1>Car Park BLA</h1>
   <p>บริการลานจอดรถ รายวัน และรายเดือน</p>
-  <a href="#parks" class="btn">ดูบริการลานจอด</a>
 </header>
 
-<section id="parks">
-  <div class="container">
-    <h2>บริการลานจอดรถ</h2>
+<main class="container">
 
-    <div class="cards">
+  <h2 style="margin-bottom:24px;">เลือกลานจอดรถ</h2>
 
-      <!-- ✅ ใบนี้ลิงก์ไป cosmo.html -->
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a" alt="">
-        <div class="card-body">
-          <h3>Cosmo Bazaar</h3>
-          <p>เวลาเปิด: 06:00 – 24:00</p>
+  <div class="cards">
 
-          <!-- 🔴 จุดสำคัญ -->
-          <a href="cosmo.html">ดูรายละเอียด →</a>
-        </div>
+    <!-- Cosmo -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a" alt="">
+      <div class="card-body">
+        <h2>Cosmo Bazaar</h2>
+        <p>ลานจอดรถ Cosmo Bazaar เปิดให้บริการทุกวัน</p>
+        <a href="cosmo.html" class="btn cosmo">ดูรายละเอียด</a>
       </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1486326655897-7d33e7c1b6f4" alt="">
-        <div class="card-body">
-          <h3>ตลาดรวมใจ</h3>
-          <p>เวลาเปิด: 05:00 – 22:00</p>
-        </div>
-      </div>
-
     </div>
+
+    <!-- ตลาดสดรวมใจ -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9" alt="">
+      <div class="card-body">
+        <h2>ตลาดสดรวมใจ</h2>
+        <p>ลานจอดรถตลาดสด เหมาะสำหรับลูกค้าและผู้ค้า</p>
+        <a href="taladruamjai.html" class="btn market">ดูรายละเอียด</a>
+      </div>
+    </div>
+
+    <!-- Outlet -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a" alt="">
+      <div class="card-body">
+        <h2>Outlet</h2>
+        <p>ลานจอดรถสำหรับลูกค้า Outlet สะดวก ปลอดภัย</p>
+        <a href="outlet.html" class="btn outlet">ดูรายละเอียด</a>
+      </div>
+    </div>
+
   </div>
-</section>
+
+</main>
 
 <footer>
   © 2026 Car Park BLA
