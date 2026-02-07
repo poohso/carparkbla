@@ -12,23 +12,13 @@
       background:#f4f6f8;
       color:#1f2937;
     }
-
     header{
       background:linear-gradient(135deg,#2563eb,#dbeafe);
       padding:60px 20px;
       text-align:center;
     }
-
-    header h1{
-      margin:0;
-      font-size:36px;
-    }
-
-    header p{
-      margin-top:10px;
-      font-size:18px;
-      opacity:.9;
-    }
+    header h1{margin:0;font-size:36px;}
+    header p{margin-top:10px;font-size:18px;opacity:.9;}
 
     .container{
       max-width:1100px;
@@ -48,13 +38,8 @@
       overflow:hidden;
       box-shadow:0 10px 24px rgba(0,0,0,.08);
       transition:.3s;
-      display:flex;
-      flex-direction:column;
     }
-
-    .card:hover{
-      transform:translateY(-6px);
-    }
+    .card:hover{transform:translateY(-6px);}
 
     .card img{
       width:100%;
@@ -62,42 +47,29 @@
       object-fit:cover;
     }
 
-    .card-body{
-      padding:20px;
-      flex:1;
-    }
-
-    .card-body h2{
-      margin:0 0 10px;
-    }
-
-    .card-body p{
-      margin:0 0 16px;
-      color:#4b5563;
-    }
+    .card-body{padding:20px;}
+    .card-body h2{margin:0 0 10px;}
+    .card-body p{margin:0 0 16px;color:#4b5563;}
 
     .btn{
       display:block;
       text-align:center;
       padding:14px;
+      border-radius:999px;
       text-decoration:none;
       font-weight:600;
-      border-radius:999px;
       color:#fff;
     }
 
-    .cosmo{ background:#2563eb; }
-    .market{ background:#16a34a; }
-    .outlet{ background:#f97316; }
+    .cosmo{background:#2563eb;}
+    .market{background:#16a34a;}
+    .outlet{background:#f97316;}
 
     footer{
       text-align:center;
-      padding:30px 20px;
+      padding:30px;
       background:#fff;
       border-top:1px solid #e5e7eb;
-      margin-top:40px;
-      font-size:14px;
-      color:#374151;
     }
   </style>
 </head>
@@ -111,36 +83,33 @@
 
 <main class="container">
 
-  <h2 style="margin-bottom:24px;">เลือกลานจอดรถ</h2>
+  <h2>เลือกลานจอดรถ</h2>
 
   <div class="cards">
 
-    <!-- Cosmo -->
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a" alt="">
+      <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a">
       <div class="card-body">
         <h2>Cosmo Bazaar</h2>
-        <p>ลานจอดรถ Cosmo Bazaar เปิดให้บริการทุกวัน</p>
+        <p>ลานจอดรถ Cosmo Bazaar</p>
         <a href="cosmo.html" class="btn cosmo">ดูรายละเอียด</a>
       </div>
     </div>
 
-    <!-- ตลาดสดรวมใจ -->
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9" alt="">
+      <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9">
       <div class="card-body">
         <h2>ตลาดสดรวมใจ</h2>
-        <p>ลานจอดรถตลาดสด เหมาะสำหรับลูกค้าและผู้ค้า</p>
-        <a href="ruamjai.html" class="btn market">ดูรายละเอียด</a>
+        <p>ลานจอดรถตลาดสดรวมใจ</p>
+        <a href="taladruamjai.html" class="btn market">ดูรายละเอียด</a>
       </div>
     </div>
 
-    <!-- Outlet -->
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a" alt="">
+      <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a">
       <div class="card-body">
         <h2>Outlet</h2>
-        <p>ลานจอดรถสำหรับลูกค้า Outlet สะดวก ปลอดภัย</p>
+        <p>ลานจอดรถ Outlet</p>
         <a href="outlet.html" class="btn outlet">ดูรายละเอียด</a>
       </div>
     </div>
@@ -149,11 +118,20 @@
 
 </main>
 
-<footer>
+<footer style="
+  background:#ffffff;
+  border-top:1px solid #e5e7eb;
+  padding:30px 20px;
+  text-align:center;
+  font-size:14px;
+  line-height:1.8;
+  color:#374151;
+">
   <strong>BANGKOK LAND AGENCY CO., LTD.</strong><br>
   47/563–564 New Geneva Industrial Condominium 9 Floor<br>
   Moo 3, Popular 3 Road, Ban Mai, Pak Kret, Nonthaburi 11120<br>
-  Tel: +66 (2) 503 5033 | Fax: +66 (2) 503 5084<br><br>
+  Tel: +66 (2) 503 5033 &nbsp;|&nbsp; Fax: +66 (2) 503 5084
+  <br><br>
   © 2026 Car Park BLA
 </footer>
 
