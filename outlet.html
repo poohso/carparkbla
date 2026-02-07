@@ -1,108 +1,149 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Outlet | Car Park BLA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ลานจอดรถ Outlet</title>
 
   <style>
-    body{
-      margin:0;
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      background:#f4f6f8;
-      color:#1f2937;
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f4f6f8;
+      color: #1f2937;
     }
-    header{
-      background:linear-gradient(135deg,#f97316,#ffedd5);
-      padding:48px 20px;
+
+    header {
+      background: linear-gradient(135deg, #ff8a00, #ffb347);
+      padding: 24px 16px;
+      color: #fff;
     }
-    header h1{
-      margin:0;
-      font-size:32px;
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
     }
-    header p{
-      margin-top:8px;
-      opacity:.9;
+
+    header p {
+      margin-top: 6px;
+      font-size: 14px;
+      opacity: 0.9;
     }
-    .container{
-      max-width:1000px;
-      margin:auto;
+
+    .container {
+      padding: 16px;
+      max-width: 480px;
+      margin: auto;
     }
-    .card{
-      background:#fff;
-      border-radius:16px;
-      padding:20px;
-      margin-bottom:20px;
-      box-shadow:0 10px 24px rgba(0,0,0,.08);
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      margin-bottom: 16px;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: transform 0.15s ease;
     }
-    .card h2{
-      margin-top:0;
+
+    .card:hover {
+      transform: translateY(-2px);
     }
-    ul{
-      padding-left:18px;
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
     }
-    .btn{
-      display:inline-block;
-      background:#2563eb;
-      color:#fff;
-      padding:12px 26px;
-      border-radius:999px;
-      text-decoration:none;
-      font-weight:600;
-      margin-top:16px;
+
+    .card-body {
+      padding: 14px 16px;
     }
-    .btn.back{
-      background:#6b7280;
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0 0 6px;
     }
-    iframe{
-      width:100%;
-      height:260px;
-      border:0;
-      border-radius:12px;
+
+    .card-desc {
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #9ca3af;
+      padding: 24px 0 12px;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <div class="container">
+  <header>
     <h1>ลานจอดรถ Outlet</h1>
-    <p>บริการจอดรถสำหรับลูกค้าและผู้มาติดต่อ Outlet</p>
+    <p>เลือกพื้นที่ลานจอดเพื่อดูรายละเอียด</p>
+  </header>
+
+  <div class="container">
+
+    <a href="outlet 1.html" class="card">
+      <img src="OUTLET.jpg" alt="Outlet 1">
+      <div class="card-body">
+        <div class="card-title">Outlet 1</div>
+        <div class="card-desc">ลานจอดรถ Outlet โซนที่ 1</div>
+      </div>
+    </a>
+
+    <a href="outlet 2-3.html" class="card">
+      <img src="OUTLET.jpg" alt="Outlet 2-3">
+      <div class="card-body">
+        <div class="card-title">Outlet 2–3</div>
+        <div class="card-desc">ลานจอดรถ Outlet โซน 2–3</div>
+      </div>
+    </a>
+
+    <a href="outlet 4.html" class="card">
+      <img src="OUTLET.jpg" alt="Outlet 4">
+      <div class="card-body">
+        <div class="card-title">Outlet 4</div>
+        <div class="card-desc">ลานจอดรถ Outlet โซนที่ 4</div>
+      </div>
+    </a>
+
+    <a href="outlet 5.html" class="card">
+      <img src="OUTLET.jpg" alt="Outlet 5">
+      <div class="card-body">
+        <div class="card-title">Outlet 5</div>
+        <div class="card-desc">ลานจอดรถ Outlet โซนที่ 5</div>
+      </div>
+    </a>
+
+    <a href="outlet 6.html" class="card">
+      <img src="OUTLET.jpg" alt="Outlet 6">
+      <div class="card-body">
+        <div class="card-title">Outlet 6</div>
+        <div class="card-desc">ลานจอดรถ Outlet โซนที่ 6</div>
+      </div>
+    </a>
+
+    <a href="cosmo walk.html" class="card">
+      <img src="COSMO.jpg" alt="Cosmo Walk">
+      <div class="card-body">
+        <div class="card-title">Cosmo Walk</div>
+        <div class="card-desc">ลานจอดรถ Cosmo Walk</div>
+      </div>
+    </a>
+
   </div>
-</header>
 
-<main class="container" style="padding:30px 20px;">
-
-  <div class="card">
-    <h2>📍 ข้อมูลลานจอด</h2>
-    <p>ลานจอดรถ Outlet สะดวก ใกล้พื้นที่ร้านค้า รองรับปริมาณรถจำนวนมาก</p>
-  </div>
-
-  <div class="card">
-    <h2>🚗 รูปแบบการจอด</h2>
-    <ul>
-      <li>จอดรายวัน</li>
-      <li>จอดชั่วคราวสำหรับลูกค้า</li>
-      <li>รองรับรถยนต์ และรถจักรยานยนต์</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>⏰ เวลาให้บริการ</h2>
-    <p>ทุกวัน เวลา <strong>06:00 – 22:00 น.</strong></p>
-  </div>
-
-  <div class="card">
-    <h2>🗺️ แผนที่</h2>
-    <iframe 
-      src="https://www.google.com/maps?q=outlet&output=embed">
-    </iframe>
-  </div>
-
-  <a href="index.html" class="btn back">← กลับหน้าหลัก</a>
-
-</main>
+  <footer>
+    © Bangkok Land Parking
+  </footer>
 
 </body>
 </html>
